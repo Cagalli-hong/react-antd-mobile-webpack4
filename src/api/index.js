@@ -4,7 +4,7 @@ import querystring from 'querystring';
 
 import config from './../config';
 const { server, devServer } = config;
-import { message } from 'antd';
+import { message } from 'antd-mobile';
 
 
 if (__LOCAL__) {   //true 为开发环境

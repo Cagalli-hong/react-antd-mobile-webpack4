@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
-import { Menu } from 'antd';
+import { Menu } from 'antd-mobile';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
@@ -38,7 +38,7 @@ class LeftNav extends React.Component {
   render() {
     return (
       <div className="leftnav">
-        <Menu
+        {/* <Menu
           onClick={this.handleClick}
           style={{ width: 180 }}
           defaultSelectedKeys={['1']}
@@ -60,7 +60,7 @@ class LeftNav extends React.Component {
               }
             })
           }
-        </Menu>
+        </Menu> */}
       </div>
     );
   }

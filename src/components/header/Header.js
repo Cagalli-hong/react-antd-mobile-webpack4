@@ -1,5 +1,5 @@
 import React from 'react';
-import { Steps } from 'antd';
+import { Steps } from 'antd-mobile';
 const Step = Steps.Step;
 
 
