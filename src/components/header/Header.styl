@@ -1,12 +1,28 @@
 .header {
   display: block;
-  height: 60px;
+  height: 45px;
   background: #fff;
-  display: flex;
+  // display: flex;
   box-shadow: 0 0 2px 1px #999;
   margin-bottom: 10px;
   .ant-steps{
     padding-top: 12px;
   }
+  .my-drawer {
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .my-drawer .am-drawer-sidebar {
+    background-color: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+  .my-drawer .am-drawer-sidebar .am-list {
+    width: 300px;
+    padding: 0;
+  }
 }
+
 

@@ -18,6 +18,20 @@ const routers = [
         import(/* webpackChunkName:"home" */ 'pages/home/index.js'),
     }),
   },
+  {
+    path: '/card',
+    component: importPath({
+      loader: () =>
+        import('pages/card/index.js'),
+    }),
+  },
+  {
+    path: '/notice',
+    component: importPath({
+      loader: () =>
+        import('pages/notice/index.js'),
+    }),
+  },
 ];
 
 const Routers = () => (

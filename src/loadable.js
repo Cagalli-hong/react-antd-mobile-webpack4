@@ -1,5 +1,6 @@
 import Loadable from 'react-loadable';
 export const Loading = props => {
+  console.log('props', props)
   if (props.error) {
     return '加载错误';
   } else if (props.timedOut) {
