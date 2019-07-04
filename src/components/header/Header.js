@@ -38,11 +38,11 @@ class Header extends React.Component {
       icon: ''
     }]
     const sidebar = (<List>
-      {routemap.map((i) => {
+      {routemap.map((i, index) => {
         return (<List.Item 
-          key={i.id}
+          key={index}
           onClick={this.changepage}
-          // thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
+          thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
           multipleLine
         ><Link to={i.url}>{i.text}</Link></List.Item>);
       })}
@@ -59,6 +59,7 @@ class Header extends React.Component {
         open={this.state.open}
         onOpenChange={this.onOpenChange}
       >
+        <span></span>
       </Drawer>
     </div>);
   }

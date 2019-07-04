@@ -7,8 +7,8 @@ const ExtendedDefinePlugin = require('extended-define-webpack-plugin'); //全局
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //清空
 const CopyWebpackPlugin = require('copy-webpack-plugin'); //复制静态html
 const webpack = require('webpack');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin; //视图分析webpack情况
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+//   .BundleAnalyzerPlugin; //视图分析webpack情况
 
 const HappyPack = require('happypack'); //多线程运行
 var happyThreadPool = HappyPack.ThreadPool({ size: 4 });
@@ -55,18 +55,18 @@ const pluginsPublic = [
     hash: true, //为静态资源生成hash值
     showErrors: true,
   }),
-  new BundleAnalyzerPlugin({   //另外一种方式
-    analyzerMode: 'server',
-    analyzerHost: '127.0.0.1',
-    analyzerPort: 8889,
-    reportFilename: 'report.html',
-    defaultSizes: 'parsed',
-    openAnalyzer: true,
-    generateStatsFile: false,
-    statsFilename: 'stats.json',
-    statsOptions: null,
-    logLevel: 'info',
-  }),
+  // new BundleAnalyzerPlugin({   //另外一种方式
+  //   analyzerMode: 'server',
+  //   analyzerHost: '127.0.0.1',
+  //   analyzerPort: 8889,
+  //   reportFilename: 'report.html',
+  //   defaultSizes: 'parsed',
+  //   openAnalyzer: true,
+  //   generateStatsFile: false,
+  //   statsFilename: 'stats.json',
+  //   statsOptions: null,
+  //   logLevel: 'info',
+  // }),
   new MiniCssExtractPlugin({
     chunkFilename: '[chunkhash].css',
   }),
